@@ -1,0 +1,53 @@
+.logo{
+    grid-area: logo;
+}
+.header{
+    grid-area: header;
+    text-align: end;
+    
+}
+.nav{
+    grid-area: nav;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.main{
+    grid-area: main;
+    height: 300px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer{
+    grid-area: footer;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.grid-container{
+    background-color: cornflowerblue;
+    border-color: 1px solid rgb(44, 66, 107);
+    border-radius: 5px;
+    padding: 15px;
+    display: grid;
+    grid-template-areas: 'header header header header header'
+                            'nav  main  main  main  article'
+                            'nav  footer  footer  footer  footer';
+    grid-template-areas: 'logo header header header header'
+                         'nav  nav    nav    nav    nav'
+                         'main  main  main  main  main'  
+                         'footer    footer  footer  footer  footer';
+}
+.grid-container div{
+    background-color: rgb(237, 132, 237);
+    border: 7px solid rgb(95, 39, 101);
+}
+
+@font-face{
+    font-family: hola;
+    src: url(/estilos/Vollkorn/Vollkorn-Italic-VariableFont_wght.ttf);
+}
+
+.ozuna{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
